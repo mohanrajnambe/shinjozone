@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    background: rgb(240, 240, 240);
+    /* color: aliceblue; */
+  }
+  *{
+    transition: all 0.2s, height 1ms;
+  }
+  .active > a{
+      font-size: 30px;
+      padding: 5px 5px 5px 5px; 
+      margin: 0;
+      margin-top: 1.5em;
+      margin-bottom: .6em;
+   }
+
+  #container, #footer {
+    width: calc(100% - 2em);
+    color: black;
+    padding: 1em;
+  }
+  /* #container {
+    height: calc(100vh - 2em);
+    background: #ecc;
+  } */
+  .button {
+    display: inline-block;
+    font-weight: bold;
+    line-height: 36px;
+    text-align: center;
+    padding: 0px;
+    max-width: 50px;
+    max-height: 50px;;
+    /* background: rgba(211, 10, 10, 0.884); */
+    /* box-shadow: 0 1px 2px rgba(0, 0, 0, .3); */
+    text-transform: uppercase;
+    font-size: 90%
+  }  
+  /* h3, h4 {
+    margin: 0;
+    margin-top: 1.5em;
+    margin-bottom: .6em;
+  } */
+  
+  label {
+    cursor: pointer;
+  }
+  
+  #sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 260px;
+    background: rgb(30, 178, 189);
+    margin-left: -304px;
+    padding: 20px;
+    color: rgb(240, 19, 3);
+    box-shadow: 0 0 4px rgba(0, 1, 0, .5);
+  }
+  #sidebarShown:checked ~ #container #sidebar {
+    margin-left: 0;
+  }
+
